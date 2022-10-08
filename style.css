@@ -36,10 +36,19 @@ h1 {
 
 .canvas {
     border-radius: 8px;
-    display: grid;
+    display: flex;
     background-color: #d362a4;
     padding: 10px;
     height: 600px;
     width: 600px;
+    flex-wrap: wrap;
+    /* gap: 0px; */
+    flex: auto;
+}
+
+.grid-item {
+    border: 2px black;
+    background-color: white;
+    width: auto;
 }
 
