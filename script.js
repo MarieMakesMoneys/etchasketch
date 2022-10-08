@@ -10,10 +10,9 @@ function numOfGridItems(gridSide) {
 };
 
 function createGridItem(gridSide) {
-    for (let i = 0; i < numOfGridItems(gridSide); i++) {
+    for (let i = 1; i <= numOfGridItems(gridSide); i++) {
         const gridItem = document.createElement('div');
         gridItem.classList.add('grid-item');
-        gridItem.textContent = `${i++}`
         canvas.appendChild(gridItem);
     }
 }
