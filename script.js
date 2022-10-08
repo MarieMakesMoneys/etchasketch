@@ -20,7 +20,6 @@ const cells = document.querySelectorAll(".grid-item");
 
 cells.forEach((cell) => {
     cell.addEventListener("mouseover", (e) => {
-        console.log("hey")
         e.target.style.background = "red";
     });
 });
