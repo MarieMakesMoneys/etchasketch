@@ -1,36 +1,45 @@
 body {
-    background-color: royalblue;
+    background-color: #d52d00;
     margin: 24px auto;
+    box-sizing: border-box;
 }
 
 h1 {
     font-family: 'Abadi MT Condensed';
     font-weight: 600;
     font-size: 56px;
-    color: rgb(184, 225, 248);
+    color: #ff9a56;
     text-align: center;
     margin: 24px auto;
 }
 
 .container {
-    background-color: rgb(151, 155, 221);
+    background-color: #a30262;
     border-radius: 16px;
     height: 700px;
     width: 1000px;
     margin: auto;
     padding: 16px;
     display: flex;
-    flex-direction: column;
-    flex: auto;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .options {
-    background-color: rgb(112, 120, 255);
+    background-color: #d362a4;
     border-radius: 8px;
+    padding: 10px;
     display: flex;
+    height: 600px;
+    width: 300px;
 }
 
 .canvas {
     border-radius: 8px;
+    display: grid;
+    background-color: #d362a4;
+    padding: 10px;
+    height: 600px;
+    width: 600px;
 }
 
