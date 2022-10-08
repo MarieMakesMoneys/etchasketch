@@ -1,0 +1,36 @@
+body {
+    background-color: royalblue;
+    margin: 24px auto;
+}
+
+h1 {
+    font-family: 'Abadi MT Condensed';
+    font-weight: 600;
+    font-size: 56px;
+    color: rgb(184, 225, 248);
+    text-align: center;
+    margin: 24px auto;
+}
+
+.container {
+    background-color: rgb(151, 155, 221);
+    border-radius: 16px;
+    height: 700px;
+    width: 1000px;
+    margin: auto;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+.options {
+    background-color: rgb(112, 120, 255);
+    border-radius: 8px;
+    display: flex;
+}
+
+.canvas {
+    border-radius: 8px;
+}
+
