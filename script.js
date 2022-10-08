@@ -1,8 +1,6 @@
 const canvas = document.querySelector(".canvas");
 
 const gridSide = 16;
-const gridItemSize = 600 / gridSide;
-console.log(gridItemSize)
 
 function numOfGridItems(gridSide) {
     let numberOfGridItems = gridSide * gridSide;
@@ -17,7 +15,4 @@ function createGridItem(gridSide) {
     }
 }
 createGridItem(gridSide);
-
-
-
 
