@@ -55,6 +55,17 @@ eraserBtn.addEventListener("click", () => {
     colorHoveredCells(color);
 });
 
+const colorOptions = ["#d52d00", "#ff9a56", "#a30262", "#d362a4", "#ffddf0"];
+
+multiBtn.addEventListener("click", () => {
+    const cells = document.querySelectorAll(".cell");
+    cells.forEach((cell) => {
+        cell.addEventListener("dragover", (e) => {
+            e.target.style.background = colorOptions[Math.floor(Math.random() * 5)];;
+        });
+    });
+});
+
 colorBtn.addEventListener("click", () => {
     color = "#ff9a56";
     colorHoveredCells(color);
