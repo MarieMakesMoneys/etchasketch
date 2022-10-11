@@ -45,22 +45,20 @@ h1 {
     padding: 10px;
     height: 600px;
     width: 600px;
-    flex-wrap: wrap;
-    /* gap: 0px; */
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: space-around;
 }
 
-.grid-item {
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.cell {
     box-sizing: border-box;
-    padding: none;
-    margin: none;
-    border: black;
+    padding: 0px;
+    margin: 0px;
     background-color: white;
-    width: 36.25px;
-    height: 36.25px;
-    display: inline-block;
+    flex: 1;
     color: rgba(255, 255, 255, 0);
 }
 
