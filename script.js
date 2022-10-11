@@ -1,6 +1,6 @@
 const canvas = document.querySelector(".canvas");
 
-const gridSide = 16;
+const gridSide = Number(prompt("How many cells in a row ?", "16"));
 
 function numOfGridItems(gridSide) {
     let numberOfGridItems = gridSide * gridSide;
@@ -19,7 +19,7 @@ createGridItem(gridSide);
 const cells = document.querySelectorAll(".grid-item");
 
 cells.forEach((cell) => {
-    cell.addEventListener("mouseover", (e) => {
+    cell.addEventListener("dragover", (e) => {
         e.target.style.background = "red";
     });
 });
