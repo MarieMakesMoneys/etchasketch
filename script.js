@@ -36,12 +36,24 @@ const multiBtn = document.querySelector("button.multi");
 const colorBtn = document.querySelector("button.color");
 const clearBtn = document.querySelector("button.clear");
 
-
-const cells = document.querySelectorAll(".cell");
-cells.forEach((cell) => {
-    cell.addEventListener("dragover", (e) => {
-        e.target.style.background = "#ff9a56";
+function colorHoveredCells(color) {
+    const cells = document.querySelectorAll(".cell");
+    cells.forEach((cell) => {
+        cell.addEventListener("dragover", (e) => {
+            e.target.style.background = color;
+        });
     });
+};
+
+
+eraserBtn.addEventListener("click", () => {
+    let color = "white";
+    colorHoveredCells(color);
+});
+
+colorBtn.addEventListener("click", () => {
+    let color = "green";
+    colorHoveredCells(color);
 });
 
 clearBtn.addEventListener ("click", () => {
