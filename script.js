@@ -30,7 +30,6 @@ function createCell(gridSide) {
 }
 createCell(gridSide);
 
-const opacityBtn = document.querySelector("button.opacity");
 const eraserBtn = document.querySelector("button.eraser");
 const multiBtn = document.querySelector("button.multi");
 const colorBtn = document.querySelector("button.color");
@@ -48,15 +47,12 @@ function colorHoveredCells(color) {
 };
 colorHoveredCells(color);
 
-
-
 eraserBtn.addEventListener("click", () => {
     color = "white";
     colorHoveredCells(color);
 });
 
 const colorOptions = ["#d52d00", "#ff9a56", "#a30262", "#d362a4", "#ffddf0"];
-
 multiBtn.addEventListener("click", () => {
     const cells = document.querySelectorAll(".cell");
     cells.forEach((cell) => {
