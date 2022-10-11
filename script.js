@@ -36,6 +36,8 @@ const multiBtn = document.querySelector("button.multi");
 const colorBtn = document.querySelector("button.color");
 const clearBtn = document.querySelector("button.clear");
 
+let color = "#ff9a56";
+
 function colorHoveredCells(color) {
     const cells = document.querySelectorAll(".cell");
     cells.forEach((cell) => {
@@ -44,15 +46,17 @@ function colorHoveredCells(color) {
         });
     });
 };
+colorHoveredCells(color);
+
 
 
 eraserBtn.addEventListener("click", () => {
-    let color = "white";
+    color = "white";
     colorHoveredCells(color);
 });
 
 colorBtn.addEventListener("click", () => {
-    let color = "green";
+    color = "#ff9a56";
     colorHoveredCells(color);
 });
 
