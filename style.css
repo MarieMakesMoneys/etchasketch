@@ -2,11 +2,12 @@ body {
     background-color: #d52d00;
     margin: 24px auto;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-h1 {
+header {
     font-family: 'Abadi MT Condensed';
-    font-weight: 600;
+    font-weight: 900;
     font-size: 56px;
     color: #ff9a56;
     text-align: center;
@@ -46,10 +47,15 @@ button {
     border-radius: 8px;
     padding: 8px;
     color: #ffddf0;
-    font-family: "Abadi MT Condensed";
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 400;
+    opacity: .8;
+    box-shadow: 1px 1px 10px #a30262;
+}
 
+button:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 .canvas {
@@ -77,3 +83,16 @@ button {
     color: rgba(255, 255, 255, 0);
 }
 
+footer {
+    font-size: 20px;
+    color: #ff9a56;
+    position: fixed;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+footer :link, footer :visited {
+    color: #ff9a56;
+}
