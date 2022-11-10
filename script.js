@@ -40,7 +40,7 @@ let color = "#ff9a56";
 function colorHoveredCells(color) {
     const cells = document.querySelectorAll(".cell");
     cells.forEach((cell) => {
-        cell.addEventListener("dragover", (e) => {
+        cell.addEventListener("mouseover", (e) => {
             e.target.style.background = color;
         });
     });
@@ -56,7 +56,7 @@ const colorOptions = ["#d52d00", "#ff9a56", "#a30262", "#d362a4", "#ffddf0"];
 multiBtn.addEventListener("click", () => {
     const cells = document.querySelectorAll(".cell");
     cells.forEach((cell) => {
-        cell.addEventListener("dragover", (e) => {
+        cell.addEventListener("mouseover", (e) => {
             e.target.style.background = colorOptions[Math.floor(Math.random() * 5)];;
         });
     });
