@@ -78,7 +78,7 @@ button:hover {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    background-color: white;
+    background-color:#dab2c9;
     flex: 1;
     color: rgba(255, 255, 255, 0);
 }

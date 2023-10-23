@@ -48,7 +48,7 @@ function colorHoveredCells(color) {
 colorHoveredCells(color);
 
 eraserBtn.addEventListener("click", () => {
-    color = "white";
+    color = "#dab2c9";
     colorHoveredCells(color);
 });
 
